@@ -1,0 +1,238 @@
+html, body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgb(153, 17, 47), rgb(153, 17, 47));
+    padding: 10px 20px;
+}
+
+header img {
+    width: 7%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #111;
+}
+
+#about .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.auto-text-class {
+    color: white;
+    font-size: 3em;
+    text-align: left; 
+}
+
+.auto-type {
+    color: lightgoldenrodyellow; 
+    background: linear-gradient(to right, lightgoldenrodyellow, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+
+.about-me {
+    padding: 20px;
+    background-color: black;
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 5px lightgoldenrodyellow;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.about-me-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me-flex img {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.skill-card {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgoldenrodyellow;
+    margin: 10px;
+    box-shadow: 0 0 10px lightgoldenrodyellow;
+    border-radius: 20px;
+    background-color: #222;
+}
+
+.skill-card h2 {
+    color: white;
+    font-size: 1.5em;
+    font-family: monospace;
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.project-card {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: black;
+    background-color: lightgoldenrodyellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background-color: yellow;
+}
+
+#contact {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #111;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: lightgoldenrodyellow;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    font-size: 1.5em;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+footer p {
+    color: lightgoldenrodyellow;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: black;
+    background-color: lightgoldenrodyellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    background-color: yellow;
+}

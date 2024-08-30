@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo" id="logo" style="width: 7%;height: 7%;">
+        <nav>
+            <button class="menu-button">Menu</button>
+            <ul class="navbar">
+                <li><a href="#about" class="navlist">About</a></li>
+                <li><a href="#skills" class="navlist">Skills</a></li>
+                <li><a href="#projects" class="navlist">Projects</a></li>
+                <li><a href="#contact" class="navlist">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="profile">
+            
+            <h1 class="auto-text-class">I do Data <span class="auto-type"></span></h1>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('.auto-type', {
+                    strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    loop: true
+                });
+            </script>
+        </div>
+        <div class="about-me">
+            <h1 style="color: lightgoldenrodyellow;font-size: 4vw;margin-bottom: 10px;text-align: center;font-family: monospace;">
+                About Me
+            </h1>
+            <div class="about-me-flex">
+                <p style="color: white; font-size: 2vw;word-spacing: 3px;text-align: left;font-family: monospace;font-weight: lighter;">
+                    I am Rashmitha, I started my coding journey in Sept 2022. Since I started with Python, I was really enjoying coding and then I started researching Data Science and its career. I am really good at math which is very essential for data science. Since then, I started exploring Data Science and learned new tools.
+                </p>
+                <img src="myimg.jpg" alt="" width="20%">
+            </div>
+        </div>
+    </section>
+
+    <h1 style="color: lightgoldenrodyellow;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;font-family: monospace;">
+        Skills
+    </h1>
+    <section id="skills">
+        <div class="skill-card"><h2>Python</h2></div>
+        <div class="skill-card"><h2>Java</h2></div>
+        <div class="skill-card"><h2>MySQL</h2></div>
+        <div class="skill-card"><h2>PowerBi</h2></div>
+        <div class="skill-card"><h2>C++</h2></div>
+        <div class="skill-card"><h2>Advanced MS Excel</h2></div>
+        <div class="skill-card"><h2>HTML</h2></div>
+        <div class="skill-card"><h2>CSS</h2></div>
+        <div class="skill-card"><h2>JavaScript</h2></div>
+        <div class="skill-card"><h2>Git</h2></div>
+        <div class="skill-card"><h2>GitHub</h2></div>
+    </section>
+
+    <h1 style="color: lightgoldenrodyellow;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;font-family: monospace;">
+        Projects
+    </h1>
+    <section id="projects">
+        <div class="project-card">
+            <h3>Vehicle Detection</h3>
+            <img src="Project_vehicle.jpg" alt="Vehicle Detection Project Image">
+            <p>This project involves detecting vehicles in real-time using computer vision techniques.</p>
+        </div>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <img src="Project_weather.jpg" alt="Weather App Project Image">
+            <p>A simple weather app that fetches data from an API and displays current weather conditions.</p>
+        </div>
+        <div class="project-card">
+            <h3>Snake and Ladder Game</h3>
+            <img src="Project_snake_ladder.jpg" alt="Snake and Ladder Game Project Image">
+            <p>A digital version of the classic Snake and Ladder board game implemented using JavaScript.</p>
+        </div>
+        <div class="project-card">
+            <h3>Medicine Booking App</h3>
+            <img src="Project_medicine.jpg" alt="Medicine Booking App Project Image">
+            <p>An app that allows users to book medicines online and get them delivered to their doorstep.</p>
+        </div>
+    </section>
+
+    <h1 style="color: lightgoldenrodyellow;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;font-family: monospace;">
+        Socials
+    </h1>
+    <section id="contact">
+        <div class="contact-card">
+            <div class="social-links">
+                <ul>
+                    <li>
+                <a href="mailto:naikrashmitha120@gmail.com" >
+                    Gmail
+                </a>
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/in/rashmitha-naik-b24a49295?" target="_blank">
+                    Linkedin
+                </a>
+                </li>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p style="color: white; text-align: center;">&copy; Rashmitha | Designed by Rashmitha</p>
+        </div>
+        <button class="download-resume" onclick="downloadResume()">Download Resume</button>
+    </footer>
+
+    <script>
+        function downloadResume() {
+            window.location.href = 'Resume.jpg'; 
+        document.querySelector('.download-resume').style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        `}
+    </script>
+</body>
+
+</html>
